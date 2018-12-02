@@ -1,0 +1,3 @@
+Entrar na raiz da pasta do projeto do front (metatron-front) e executar os seguintes comandos:
+npm install
+ng serve
