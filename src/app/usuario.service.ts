@@ -9,7 +9,8 @@ export class UsuarioService {
   constructor(private http: HttpClient) { }
 
   findAll(nomeUsuario: string, nomeCargo: string): Observable<Usuario[]> { 
-    return this.http.get<Usuario[]>('http://metatron.getsandbox.com/api/usuarios')
+    return this.http.get<Usuario[]>(
+      `http://localhost:8084/metatron-api/api/v1/usuarios/?nomeUsuario=${nomeUsuario}&nomeCargo=${nomeCargo}`)
   }
 
 }

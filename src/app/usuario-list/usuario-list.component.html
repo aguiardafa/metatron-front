@@ -1,8 +1,8 @@
 <div>
-  <form>
-    <input type="text" placeholder="Nome">
-    <input type="text" placeholder="Cargo">
-    <button>Pesquisar</button>
+  <form [formGroup]="form">
+    <input formControlName="nomeUsuario" type="text" placeholder="Nome">
+    <input formControlName="nomeCargo" type="text" placeholder="Cargo">
+    <button (click)="filter()">Pesquisar</button>
   </form>
 </div>
 <h2>Cadastro de Usuários</h2>
